@@ -25,23 +25,32 @@ function Login() {
   };
 
   return (
-    <div>
-      <form onSubmit={login}>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          value={user.username}
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={user.password}
-          onChange={handleChange}
-        />
-        <button type="submit">Submit</button>
+    <div className="login-form">
+      <h1>Login</h1>
+      <form className="ui form" onSubmit={login}>
+        <div className="field">
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            value={user.username}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="field">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={user.password}
+            onChange={handleChange}
+          />
+        </div>
+        <button className="ui button" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
