@@ -97,3 +97,18 @@ form {
     margin-top: 16px;
   }
 }
+
+.login-form {
+  background-image: url("https://images.unsplash.com/photo-1580508271385-40f3683cf893?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex-direction: column;
+  padding-bottom: 12vh;
+  padding-top: 3vh;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
